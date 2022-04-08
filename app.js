@@ -1,5 +1,6 @@
 
 const button = document.querySelector('button');
+const clearBtn = document.querySelector('#clear');
 
 const jokes = document.querySelector('#jokes');
 
@@ -8,6 +9,10 @@ const addNewJoke = async () =>{
     const newLI = document.createElement('LI');
     newLI.append(jokeText);
     jokes.append(newLI)
+}
+
+const clearJokes = () =>{
+    jokes.innerHTML = ''
 }
 
 const getDadJoke = async () => {
@@ -22,3 +27,4 @@ const getDadJoke = async () => {
 }
 
 button.addEventListener('click', addNewJoke);
+clearBtn.addEventListener('click', clearJokes);

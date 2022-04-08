@@ -1,3 +1,17 @@
 body{
-    background: aquamarine;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+button{
+    font-size: 2em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    line-height: 2;
+    font-size: 1.2em;
 }
